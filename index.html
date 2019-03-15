@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Play Hangman</title>
+
+        <!-- Linking to CSS Reset Stylesheet -->
+        <link rel="stylesheet" href="assets/css/reset.css">
+
+        <!-- Linking Bootstrap Stylesheet -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- Linking to CSS Stylesheet -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+
+    <!-- Title Image -->
+    <div class="container">
+        <img id="nav-image" src=assets/images/title.jpeg width="700px" height="200px">
+    </div>
+
+    
+    <div class="container">
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-6">
+                <h1 id="title">Let's Play Hangman!</h1><br>
+                <h4 id="brief">Press any key to get started! <br> <br> Guess the name of the Country..</h4><br>
+                <div id="message"></div>
+                <div id="image"></div>
+            </div>
+            <!-- Right Column -->
+            <div class="col-md-6">
+                <h4 id="brief">Wins: 
+                    <span id="wins"><strong> 0</strong></span>
+                </h4><br>
+                <h3 id="brief">Current Word</h3>
+                <div id="underscore"> </div><br><br>
+                <h3 id="brief">Remaining Guesses: 
+                    <span id="remaining-guess"><strong> </strong></span>
+                </h3><br><br>
+                <h3 id="brief">Wrong Guesses: 
+                    <span id="wrong-guess"><strong> </strong></span>
+                </h3><br><br>
+            </div>
+        </div>
+    </div>
+
+    <!-- Linking Javascript text -->
+    <script src="assets/javascript/game.js">
+    </script>
+
+</body>
+</html>
